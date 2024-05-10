@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
-
 import Placements from './components/Placements';
-import About from './components/About';
-import Campuses from './components/Campuses';
 import Contact from './components/Contact';
 import PythonTraining from './components/trainings/PythonTraining';
 import PythonFullStack from './components/trainings/PythonFullStack';
@@ -20,71 +18,72 @@ import CProgramming from './components/trainings/CProgramming';
 import Blog from './components/Resources/Blog';
 import Syllabus from './components/Resources/Syllabus';
 import ProjectIdeas from './components/Resources/ProjectIdeas';
-import { IoClose, IoMenu } from "react-icons/io5";
-import "./components/Navigate.css";
+import Team from './components/About/Team';
+import Gallery from './components/About/Gallery';
+import Internships from './components/About/Internships';
+import JobAcceleratorProgram from './components/About/JobAcceleratorProgram';
+import Bangalore from './components/Campuses/Bangalore';
+import Hyderabad from './components/Campuses/Hyderabad';
+import Vijayawada from './components/Campuses/Vijayawada';
 
-const Navbar = () => {
+const App = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
 
-  const closeMenuOnMobile = () => {
-    if (window.innerWidth <= 1150) {
-      setShowMenu(false);
-    }
-  }
-
-  return (
-    <nav className="navbar">
-      <div className="nav">
-        <Link to="/" className="nav__logo">Navbar</Link>
-        <div className="nav__toggle" onClick={toggleMenu}>
-          {showMenu ? <IoClose /> : <IoMenu />}
-        </div>
-        <ul className={showMenu ? "nav__menu show-menu" : "nav__menu"}>
-          <li onClick={closeMenuOnMobile}><Link to="/">Home</Link></li>
-          <li className="nav__dropdown" onClick={closeMenuOnMobile}>
-            <span>Trainings</span>
-            <ul className="nav__dropdown-menu">
-              <li><Link to="/trainings/python">Python Training</Link></li>
-              <li><Link to="/trainings/python-full-stack">Python Full Stack</Link></li>
-              <li><Link to="/trainings/java">Java Training</Link></li>
-              <li><Link to="/trainings/java-full-stack">Java Full Stack Training</Link></li>
-              <li><Link to="/trainings/data-science">Data Science Training</Link></li>
-              <li><Link to="/trainings/machine-learning">Machine Learning</Link></li>
-              <li><Link to="/trainings/software-testing">Software Testing</Link></li>
-              <li><Link to="/trainings/react-js">React JS Training</Link></li>
-              <li><Link to="/trainings/data-structures">Data Structures Training</Link></li>
-              <li><Link to="/trainings/c-programming">C Programming</Link></li>
-            </ul>
-          </li>
-          <li className="nav__dropdown" onClick={closeMenuOnMobile}>
-            <span>Trainings</span>
-            <ul className="nav__dropdown-menu">
-              <li><Link to="/Resources/Blog">Blog</Link></li>
-              <li><Link to="/Resources/ProjectIdeas">ProjectIdeas</Link></li>
-              <li><Link to="/Resources/Syllabus">Syllabus</Link></li>
-          
-            </ul>
-          </li>
-         
-          <li onClick={closeMenuOnMobile}><Link to="/placements">Placements</Link></li>
-          <li onClick={closeMenuOnMobile}><Link to="/about">About</Link></li>
-          <li onClick={closeMenuOnMobile}><Link to="/campuses">Campuses</Link></li>
-          <li onClick={closeMenuOnMobile}><Link to="/contact">Contact</Link></li>
-        </ul>
-      </div>
-    </nav>
-  );
-}
-
-function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Navbar bg="white" variant="light" expand="lg">
+          <Navbar.Brand as={Link} to="/">
+            <img src='./CodegnanDestination.png' alt="Codegnan Logo" style={{ height: '90px', width: '55%',marginRight:'130px',marginLeft:'40px' }} />
+          </Navbar.Brand>
+          <Navbar.Toggle 
+  aria-controls="basic-navbar-nav" 
+  onClick={toggleMenu} 
+  style={{ borderColor: "#1ab69d" }} // Change the color here
+/>
+
+
+
+          <Navbar.Collapse id="basic-navbar-nav" className={showMenu ? "show" : ""}>
+            <Nav className="mr-auto" style={{ color: '#001019',fontSize:'20px'}}>
+              <Nav.Link as={Link} to="/" onClick={() => setShowMenu(false)} style={{marginLeft:"20px"}}>Home</Nav.Link><hr/>
+              <NavDropdown title="Trainings" id="basic-nav-dropdown" style={{marginLeft:"20px"}}>
+                <NavDropdown.Item as={Link} to="/trainings/python" onClick={() => setShowMenu(false)}>Python Training</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/trainings/python-full-stack" onClick={() => setShowMenu(false)}>Python Full Stack</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/trainings/java" onClick={() => setShowMenu(false)}>Java Training</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/trainings/java-full-stack" onClick={() => setShowMenu(false)}>Java Full Stack Training</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/trainings/data-science" onClick={() => setShowMenu(false)}>Data Science Training</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/trainings/machine-learning" onClick={() => setShowMenu(false)}>Machine Learning</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/trainings/software-testing" onClick={() => setShowMenu(false)}>Software Testing</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/trainings/react-js" onClick={() => setShowMenu(false)}>React JS Training</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/trainings/data-structures" onClick={() => setShowMenu(false)}>Data Structures Training</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/trainings/c-programming" onClick={() => setShowMenu(false)}>C Programming</NavDropdown.Item>
+              </NavDropdown><hr/>
+              <NavDropdown title="Resources" id="basic-nav-dropdown" style={{marginLeft:"20px"}}>
+                <NavDropdown.Item as={Link} to="/Resources/Blog" onClick={() => setShowMenu(false)}>Blog</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/Resources/ProjectIdeas" onClick={() => setShowMenu(false)}>Project Ideas</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/Resources/Syllabus" onClick={() => setShowMenu(false)}>Syllabus</NavDropdown.Item>
+              </NavDropdown><hr/>
+              <Nav.Link as={Link} to="/placements" onClick={() => setShowMenu(false)} style={{marginLeft:"20px"}}>Placements</Nav.Link><hr/>
+              <NavDropdown title="About" id="basic-nav-dropdown" style={{marginLeft:"20px"}}>
+                <NavDropdown.Item as={Link} to="/About/Team" onClick={() => setShowMenu(false)}>Team</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/About/Gallery" onClick={() => setShowMenu(false)}>Gallery</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/About/Internships" onClick={() => setShowMenu(false)}>Internships</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/About/JobAcceleratorProgram" onClick={() => setShowMenu(false)}>JobAcceleratorProgram</NavDropdown.Item>
+              </NavDropdown><hr/>
+              <NavDropdown title="Campuses" id="basic-nav-dropdown" style={{marginLeft:"20px"}}>
+                <NavDropdown.Item as={Link} to="/Campuses/Bangalore" onClick={() => setShowMenu(false)}>Bangalore</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/Campuses/Hyderabad" onClick={() => setShowMenu(false)}>Hyderabad</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/Campuses/Vijayawada" onClick={() => setShowMenu(false)}>Vijayawada</NavDropdown.Item>
+              </NavDropdown><hr/>
+              <Nav.Link as={Link} to="/contact" onClick={() => setShowMenu(false)} style={{marginLeft:"20px"}}>Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/trainings" element={<trainings />}>
@@ -105,8 +104,17 @@ function App() {
             <Route path="project-ideas" element={<ProjectIdeas />} />
           </Route>
           <Route path="/placements" element={<Placements />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/campuses" element={<Campuses />} />
+          <Route path="/About" element={<about />}>
+            <Route path="team" element={<Team />} /> 
+            <Route path="gallery" element={<Gallery />} /> 
+            <Route path="internships" element={<Internships />} />
+            <Route path="job-accelerator-program" element={<JobAcceleratorProgram />} /> 
+          </Route>
+          <Route path="/Campuses" element={<campuses />}>
+            <Route path="Bangalore" element={<Bangalore />} /> 
+            <Route path="Hyderabad" element={<Hyderabad />} /> 
+            <Route path="Vijayawada" element={<Vijayawada />} />
+          </Route>
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

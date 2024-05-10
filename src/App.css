@@ -1,13 +1,23 @@
 /* App.css */
+* {
+  border: 1px solid red;
+}
+
 .App {
   max-width: 800px;
-  margin: 0 auto;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start; /* Align items at the start of the cross axis */
+  margin-top: 10px; /* Adjust margin as needed to create gap with the image */
+  flex-wrap: nowrap; /* Prevent elements from wrapping */
 }
 
 nav ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+  margin-left: 15%;
 }
 
 nav ul li {
@@ -43,4 +53,8 @@ nav ul li ul li a {
 
 nav ul li ul li a:hover {
   background-color: #ddd;
+}
+
+img {
+  max-width: 250px;
 }
