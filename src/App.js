@@ -41,17 +41,15 @@ const App = () => {
             <img src='./CodegnanDestination.png' alt="Codegnan Logo" style={{ height: '90px', width: '55%',marginRight:'130px',marginLeft:'40px' }} />
           </Navbar.Brand>
           <Navbar.Toggle 
-  aria-controls="basic-navbar-nav" 
-  onClick={toggleMenu} 
-  style={{ borderColor: "#1ab69d" }} // Change the color here
-/>
-
-
+            aria-controls="basic-navbar-nav" 
+            onClick={toggleMenu} 
+            style={{ borderColor: "#1ab69d" }} // Change the color here
+          />
 
           <Navbar.Collapse id="basic-navbar-nav" className={showMenu ? "show" : ""}>
             <Nav className="mr-auto" style={{ color: '#001019',fontSize:'20px'}}>
               <Nav.Link as={Link} to="/" onClick={() => setShowMenu(false)} style={{marginLeft:"20px"}}>Home</Nav.Link><hr/>
-              <NavDropdown title="Trainings" id="basic-nav-dropdown" style={{marginLeft:"20px"}}>
+              <NavDropdown title="trainings" id="basic-nav-dropdown" style={{marginLeft:"20px"}}>
                 <NavDropdown.Item as={Link} to="/trainings/python" onClick={() => setShowMenu(false)}>Python Training</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/trainings/python-full-stack" onClick={() => setShowMenu(false)}>Python Full Stack</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/trainings/java" onClick={() => setShowMenu(false)}>Java Training</NavDropdown.Item>
@@ -63,22 +61,22 @@ const App = () => {
                 <NavDropdown.Item as={Link} to="/trainings/data-structures" onClick={() => setShowMenu(false)}>Data Structures Training</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/trainings/c-programming" onClick={() => setShowMenu(false)}>C Programming</NavDropdown.Item>
               </NavDropdown><hr/>
-              <NavDropdown title="Resources" id="basic-nav-dropdown" style={{marginLeft:"20px"}}>
-                <NavDropdown.Item as={Link} to="/Resources/Blog" onClick={() => setShowMenu(false)}>Blog</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/Resources/ProjectIdeas" onClick={() => setShowMenu(false)}>Project Ideas</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/Resources/Syllabus" onClick={() => setShowMenu(false)}>Syllabus</NavDropdown.Item>
+              <NavDropdown title="resources" id="basic-nav-dropdown" style={{marginLeft:"20px"}}>
+                <NavDropdown.Item as={Link} to="/resources/blog" onClick={() => setShowMenu(false)}>Blog</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/resources/project-ideas" onClick={() => setShowMenu(false)}>Project Ideas</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/resources/syllabus" onClick={() => setShowMenu(false)}>Syllabus</NavDropdown.Item>
               </NavDropdown><hr/>
-              <Nav.Link as={Link} to="/placements" onClick={() => setShowMenu(false)} style={{marginLeft:"20px"}}>Placements</Nav.Link><hr/>
-              <NavDropdown title="About" id="basic-nav-dropdown" style={{marginLeft:"20px"}}>
-                <NavDropdown.Item as={Link} to="/About/Team" onClick={() => setShowMenu(false)}>Team</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/About/Gallery" onClick={() => setShowMenu(false)}>Gallery</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/About/Internships" onClick={() => setShowMenu(false)}>Internships</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/About/JobAcceleratorProgram" onClick={() => setShowMenu(false)}>JobAcceleratorProgram</NavDropdown.Item>
+              <Nav.Link as={Link} to="/placements" onClick={() => setShowMenu(false)} style={{marginLeft:"20px"}}>Campus</Nav.Link><hr/>
+              <NavDropdown title="about" id="basic-nav-dropdown" style={{marginLeft:"20px"}}>
+                <NavDropdown.Item as={Link} to="/about/team" onClick={() => setShowMenu(false)}>Team</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/about/gallery" onClick={() => setShowMenu(false)}>Gallery</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/about/internships" onClick={() => setShowMenu(false)}>Internships</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/about/job-accelerator-program" onClick={() => setShowMenu(false)}>Job Accelerator Program</NavDropdown.Item>
               </NavDropdown><hr/>
-              <NavDropdown title="Campuses" id="basic-nav-dropdown" style={{marginLeft:"20px"}}>
-                <NavDropdown.Item as={Link} to="/Campuses/Bangalore" onClick={() => setShowMenu(false)}>Bangalore</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/Campuses/Hyderabad" onClick={() => setShowMenu(false)}>Hyderabad</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/Campuses/Vijayawada" onClick={() => setShowMenu(false)}>Vijayawada</NavDropdown.Item>
+              <NavDropdown title="Placements" id="basic-nav-dropdown" style={{marginLeft:"20px"}}>
+                <NavDropdown.Item as={Link} to="/campuses/bangalore" onClick={() => setShowMenu(false)}>Bangalore</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/campuses/hyderabad" onClick={() => setShowMenu(false)}>Hyderabad</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/campuses/vijayawada" onClick={() => setShowMenu(false)}>Vijayawada</NavDropdown.Item>
               </NavDropdown><hr/>
               <Nav.Link as={Link} to="/contact" onClick={() => setShowMenu(false)} style={{marginLeft:"20px"}}>Contact</Nav.Link>
             </Nav>
@@ -86,7 +84,7 @@ const App = () => {
         </Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/trainings" element={<trainings />}>
+          <Route path="/trainings/*" element={<trainings />}>
             <Route path="python" element={<PythonTraining />} />
             <Route path="python-full-stack" element={<PythonFullStack />} />
             <Route path="java" element={<JavaTraining />} />
@@ -98,22 +96,22 @@ const App = () => {
             <Route path="data-structures" element={<DataStructuresTraining />} />
             <Route path="c-programming" element={<CProgramming />} />
           </Route>
-          <Route path="/Resources" element={<resources />}>
+          <Route path="/resources/*" element={<resources />}>
             <Route path="blog" element={<Blog />} />
             <Route path="syllabus" element={<Syllabus />} />
             <Route path="project-ideas" element={<ProjectIdeas />} />
           </Route>
           <Route path="/placements" element={<Placements />} />
-          <Route path="/About" element={<about />}>
+          <Route path="/about/*" element={<about />}>
             <Route path="team" element={<Team />} /> 
             <Route path="gallery" element={<Gallery />} /> 
             <Route path="internships" element={<Internships />} />
             <Route path="job-accelerator-program" element={<JobAcceleratorProgram />} /> 
           </Route>
-          <Route path="/Campuses" element={<campuses />}>
-            <Route path="Bangalore" element={<Bangalore />} /> 
-            <Route path="Hyderabad" element={<Hyderabad />} /> 
-            <Route path="Vijayawada" element={<Vijayawada />} />
+          <Route path="/camp" element={<campuses />}>
+            <Route path="bangalore" element={<Bangalore />} /> 
+            <Route path="hyderabad" element={<Hyderabad />} /> 
+            <Route path="vijayawada" element={<Vijayawada />} />
           </Route>
           <Route path="/contact" element={<Contact />} />
         </Routes>
