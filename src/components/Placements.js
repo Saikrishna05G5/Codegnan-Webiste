@@ -98,7 +98,7 @@ const Placement= () => {
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.402621398015!2d80.6446607746087!3d16.505759227604962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fb51a430ffad%3A0xe6ed5ede725b304b!2sCodegnan%20IT%20Solutions%3A%20Your%20Best%20Training%20Institute%20for%20Software%20Courses!5e0!3m2!1sen!2sin!4v1715246533499!5m2!1sen!2sin" width="530" height="420" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div className="card ca" style={{ width: "38rem", marginLeft: "-1%" }}>
-              <div className="card-body">
+              <div className="card-body" style={{padding:"3px"}}>
                 <h5 className="card-title" style={{ marginTop: "-4%" }}>Codegnan Details</h5>
                 <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
                 <p className="card-text"><i class="fa-solid fa-envelope"></i> Quick Contact</p>
@@ -106,7 +106,7 @@ const Placement= () => {
                 <p className='card-text'><i class="fa-solid fa-phone"></i> Phone Number</p>
                 <p className="card-text1">+91 9888758888</p>
                 <p className='card-text'><i class="fa-solid fa-location-dot"></i> Our Location</p>
-                <p className="card-text2">Busstop, PB Siddhartha College Gym, College of Arts and<br /> Science, H.No 40-5-19/16, Prasad Naidu Complex,<br /> Moghalrajpuram, Vijayawada, Andhra Pradesh, 520010</p>
+                <p className="card-text2" style={{}}>Busstop, PB Siddhartha College Gym, College of Arts and<br /> Science, H.No 40-5-19/16, Prasad Naidu Complex,<br /> Moghalrajpuram, Vijayawada, Andhra Pradesh, 520010</p>
 
               </div>
             </div>
@@ -114,25 +114,30 @@ const Placement= () => {
         </div>
       </section>
       <section>
-        <div className="head-part">
-          <h1><span className="main-heading">Our IT training programs</span> <span className="bold">in Vijayawada</span></h1>
+        <div className="head-part text-center">
+          <h1><span className="main-heading text-center">Our IT training programs</span> <span className="bold">in Vijayawada</span></h1>
           <img src="https://codegnan.com/wp-content/uploads/2023/05/heading-separator.png" alt="png" />
         </div>
+        <div className="caption-section">
+        
+          <center>
+            
+        <span className="caption">Our expert trainers offer tech courses and skill development programs<br/>
+          that will help you get your first high-paying jobs. Check out our training programs in Vijayawada.</span>
+          </center>
+      
+    </div>
+        <div className="main" style={{marginTop:"-5%"}}>
+         
+          
 
-        <div className="main">
-          <div className="caption-section">
-            <p>
-              <span className="caption">Our expert trainers offer tech courses and skill development programs
-                that will help you get your first high-paying jobs. Check out our training programs in Vijayawada.</span>
-            </p>
-          </div>
-
-          <div className="row">
+        <div class="container">
+        <div className="row d-flex justify-content-center">
             {/* Python */}
             <div class="col-md-6" style={{ marginBottom: "20px" }}>
               <div className="card" style={{ width: "30rem" }}>
                 {/* Python card content */}
-                <div className="card-body">
+                <div className="card-body d-flex justify-content-center flex-column" style={{marginLeft:"20px"}}>
                   <h2 className="card-title heading">1. Python course training in Vijayawada</h2>
                   <p className="card-title"><span className="sub-heading">Course duration:</span>1 month</p>
                   <p className="card-title"><span className="sub-heading">Course fees: </span>₹10,000</p>
@@ -149,7 +154,7 @@ const Placement= () => {
             <div class="col-md-6" style={{ marginBottom: "20px" }}>
               <div className="card" style={{ width: "30rem" }}>
                 {/* Java card content */}
-                <div className="card-body">
+                <div className="card-body d-flex justify-content-center flex-column" style={{marginLeft:"25px"}}>
                   <h2 className="card-title heading">2. Java full stack course training in Vijayawada</h2>
                   <p className="card-title"><span className="sub-heading">Course duration:</span>  100 days</p>
                   <p className="card-title"><span className="sub-heading">Course fees:</span>  ₹50,000</p>
@@ -163,12 +168,12 @@ const Placement= () => {
             </div>
 
 
-            <div className="row">
+            <div className="row d-flex justify-content-center">
               {/* Machine Learning */}
               <div class="col-md-6" style={{ marginBottom: "20px" }}>
                 <div className="card" style={{ width: "30rem" }}>
                   {/* Machine Learning card content */}
-                  <div className="card-body">
+                  <div className="card-body d-flex justify-content-center flex-column" style={{marginLeft:"10px"}}>
                     <h2 className="card-title heading">3. Machine learning course training in Vijayawada</h2>
                     <p className="card-title"><span className="sub-heading">Course duration:</span>  1 month</p>
                     <p className="card-title"><span className="sub-heading">Course fees:</span>  ₹10,000</p>
@@ -184,7 +189,7 @@ const Placement= () => {
               <div class="col-md-6" style={{ marginBottom: "20px" }}>
                 <div className="card" style={{ width: "30rem" }}>
                   {/* Data Science card content */}
-                  <div className="card-body">
+                  <div className="card-body d-flex justify-content-center flex-column" style={{marginLeft:"10px"}}>
                     <h2 className="card-title heading">4. Data science training in Vijayawada</h2>
                     <p className="card-title"><span className="sub-heading">Course duration:</span>  6 months</p>
                     <p className="card-title"><span className="sub-heading">Course fees:</span>  ₹75,000</p>
@@ -197,12 +202,12 @@ const Placement= () => {
               </div>
             </div>
 
-            <div className="row">
+            <div className="row d-flex justify-content-center">
               {/* React JS */}
               <div class="col-md-6" style={{ marginBottom: "20px" }}>
                 <div className="card" style={{ width: "30rem" }}>
                   {/* React JS card content */}
-                  <div className="card-body">
+                  <div className="card-body d-flex justify-content-center flex-column" style={{marginLeft:"10px"}}>
                     <h2 className="card-title heading">5. React JS course training in Vijayawada</h2>
                     <p className="card-title"><span className="sub-heading">Course duration:</span>  1 month</p>
                     <p className="card-title"><span className="sub-heading">Course fees:</span>  ₹10,000</p>
@@ -219,7 +224,7 @@ const Placement= () => {
               <div class="col-md-6" style={{ marginBottom: "20px" }}>
                 <div className="card" style={{ width: "30rem" }}>
                   {/* C Programming card content */}
-                  <div className="card-body">
+                  <div className="card-body d-flex justify-content-center flex-column" style={{marginLeft:"10px"}}>
                     <h2 className="card-title heading">6. C programming course training in Vijayawada</h2>
                     <p className="card-title"><span className="sub-heading">Course duration:</span>  1 month</p>
                     <p className="card-title"><span className="sub-heading">Course fees:</span>  ₹5,000</p>
@@ -233,12 +238,12 @@ const Placement= () => {
               </div>
             </div>
 
-            <div className="row">
+            <div className="row d-flex justify-content-center">
               {/* Data Structures and Algorithms */}
               <div class="col-md-6" style={{ marginBottom: "20px" }}>
                 <div className="card" style={{ width: "30rem" }}>
                   {/* Data Structures and Algorithms card content */}
-                  <div className="card-body">
+                  <div className="card-body d-flex justify-content-center flex-column" style={{marginLeft:"10px"}}>
                     <h2 className="card-title heading">7. Data structures and algorithms training in Vijayawada</h2>
                     <p className="card-title"><span className="sub-heading">Course duration:</span>  3 months</p>
                     <p className="card-title"><span className="sub-heading">Course fees:</span>  ₹30,000</p>
@@ -255,7 +260,7 @@ const Placement= () => {
               <div class="col-md-6" style={{ marginBottom: "20px" }}>
                 <div className="card" style={{ width: "30rem" }}>
                   {/* Software Testing card content */}
-                  <div className="card-body">
+                  <div className="card-body d-flex justify-content-center flex-column" style={{marginLeft:"10px"}}>
                     <h2 className="card-title heading">8. Software testing training in Vijayawada</h2>
                     <p className="card-title"><span className="sub-heading">Course duration:</span>  100 days</p>
                     <p className="card-title"><span className="sub-heading">Course fees:</span> ₹50,000</p>
@@ -269,6 +274,7 @@ const Placement= () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section >
       <section className='sec2'>
@@ -293,28 +299,48 @@ const Placement= () => {
       </section>
       <section className='sec4'>
         <div className='container'>
-          <div className='row'>
-            <div className='col-12 col-md-6'>
-              <p className='pfour'>TESTMONIALS</p>
-              <h2 className='st'>What Our Students<br />
+        <center>
+        <div className='row'>
+            <div className='col-12 col-md-6 d-flex justify-center flex-column'>
+              <p className='pfour text-center'>TESTMONIALS</p>
+              <h2 className='st text-center'>What Our Students<br /> 
                 Have To Say</h2>
-              <img src="https://codegnan.com/wp-content/uploads/2023/05/heading-separator.png" className='headimg' />
-              <p className='pfive'>Witnessing our students light up with a radiant smile<br /> after acquiring newfound knowledge brings us<br /> immense joy. Each of these responses fills out hearts<br />  with gratitude and fuels our passion and purpose.<br />
+            <center>
+            <img src="https://codegnan.com/wp-content/uploads/2023/05/heading-separator.png" className='headimg' style={{width:"30%",paddingLeft:"25px"}} />
+            </center>
+              <p className='pfive text-center'style={{marginRight:"-40px",fontSize:"20px"}}>Witnessing our students light up with a radiant smile after acquiring newfound knowledge brings us immense joy. Each of these responses fills out hearts  with gratitude and fuels our passion and purpose.
 
                 Testimonial
                 Flexible Timings, friendly </p>
 
             </div>
-            <div className='col-12 col-md-6'><img src={code} style={{ width: "100%" }} /></div>
-          </div>
-          <div className="row">
-            <div className='col-12 text-center'>
-              <h5 >Discover the Codgnan Experience: Hear from Students.</h5>
-            </div>
-            <div className="col-12 text-center">
-              <iframe width="630" height="365" src="https://www.youtube.com/embed/ox9FspCBF_k?si=b-PMn5qA74HuLul6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style={{ border: "none", borderRadius: "0px 60px", marginLeft: "-2%" }}></iframe>
+            <div className='col-12 col-md-6' >
+          
+              <img src={code} style={{ width: "125%",display:"flex",justifyContent:"center"}} />
+           
             </div>
           </div>
+        </center>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <h5 style={{ textAlign: 'center' }}>Discover the Codgnan Experience: Hear from Students.</h5>
+                <div style={{ position: 'relative', overflow: 'hidden', width: '100%', paddingTop: '56.25%', maxWidth: '630px', margin: '0 auto' }}>
+                    <iframe
+                        src="https://www.youtube.com/embed/ox9FspCBF_k?si=b-PMn5qA74HuLul6"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', borderRadius: '0px 60px' }}
+                    ></iframe>
+                </div>
+            </div>
+            <style>{`
+                @media (max-width: 768px) {
+                    div[style*="padding-top:56.25%"] {
+                        height: auto !important;
+                    }
+                }
+            `}</style>
           <div class="row">
 
             <h6 className='head4'>CODEGNAN LEARNERS SUCCESS</h6>

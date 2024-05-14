@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import CardSlider from './car/CardSlider.js';
 // import code from './Codegnan.png';
-import Team from './Team.js';
+import "./Home.css";
+import Team from "./Team.js";
 const cards = [
   {
 
@@ -45,7 +46,7 @@ const Home = () => {
   const [isOpen8, setIsOpen8] = useState(false);
   return (
     <>
-     <style>
+ <style>
       {
         `* {
           font-family: sans-serif system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -329,6 +330,99 @@ const Home = () => {
           border-radius: 5px;
           color: white;
         }
+        @media only screen and (max-width: 1200px) {
+          /* Adjustments for all elements at screen sizes less than 1200px */
+          .sec1 {
+            margin-top: 10%;
+            margin-left:5%;
+            width:100%;
+          }
+        
+          .head1 {
+            font-weight: bold;
+            color: white;
+            font-size: 35px;
+            padding-top: 7%;
+            margin-left: 5%;
+            text-align: center;
+          }
+        
+          .para1,
+          .para2 {
+            color: whitesmoke;
+            margin-top: 3%;
+            margin-left: 5%;
+            font-size: 20px;
+            line-height: 1.5;
+            text-align: center;
+          }
+        
+          .img1 {
+            width: 100%;
+            margin-left: 15%;
+          }
+        
+          .btn1 {
+            background-color: #1ab69d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            height: 50px;
+            width: 200px;
+            margin-left: 3%;
+            margin-bottom: 15%;
+          }
+        
+          .companies {
+            text-align: center;
+            font-size: 35px;
+          }
+        
+          .sec4 {
+            margin-top: 4%;
+            background-color: #f4f4f4;
+          }
+        
+          .span6 {
+            color: #ee4a62;
+            font-weight: bold;
+          }
+        
+          .jap {
+            text-decoration: none;
+          }
+        
+          .btn2 {
+            background-color: #1ab69d;
+            border: 1px solid white;
+            border-radius: 5px;
+            color: white;
+          }
+        
+          .btn2:hover {
+            background-color: #1ab69d;
+            border: 1px solid black;
+            border-radius: 5px;
+            color: white;
+          }
+        
+          /* Add more adjustments here for other elements as needed */
+        }
+        @media only screen and width(max-width:"1199px"){
+          .sec1{
+            marginTop:10%;
+            max-width:100%;
+            marginRight:"30%";
+          }
+        }
+        @media only width(min-width:"390px") and width(max-width:"490px"){
+          .sec1{
+            marginTop:10%;
+            max-width:100%;
+            marginRight:"30%";
+          }
+        }
+        
         
         .btn2:hover {
           background-color: #1ab69d;
@@ -338,10 +432,10 @@ const Home = () => {
         }`
       }
      </style>
-      <section className='sec1' style={{marginTop:"-10%"}}>
+      <section className='sec1'>
         <div className='container'>
           <div className='row'>
-            <div className='col-12 col-md-6'>
+            <div className='col-12 col-md-6 d-flex justify-content-center flex-column' style={{marginLeft:"-5px"}}>
               <h3 className='head1'>Online & classroom <br /><span className='span1'>IT training institute (India)</span></h3>
               <p className='para1'>Codegnan offers<b> finishing schools </b>for students who want to start and grow<br />their tech career. Become job-ready with our expert trainer-led online and<br />classroom IT certification courses.</p><br />
               <ul className='list-unstyled'>
@@ -566,7 +660,7 @@ const Home = () => {
     
       </section>
       <section className='sec3'>
-        <h1 className='companies'>Companies where<span className='span5'>   Our students got placed</span> </h1>
+        <center><h1 className='companies'>Companies where<span style={{color:"#1AB69D"}} > Our students got placed</span> </h1></center>
         <center>
           <img src="https://codegnan.com/wp-content/uploads/2023/05/heading-separator.png" alt="Heading" />
         </center>
@@ -811,7 +905,7 @@ const Home = () => {
         <div className='container' style={{marginTop:"-2%"}}>
           <div className='row'>
             <div className='col-12 col-md-6' style={{marginTop:"-5%"}}>
-              <h1 className='why' style={{ fontSize: "35px", marginTop: "30%", marginLeft: "10%" }}>Why enroll in Codegnan's<br /><span className='span5'>Certification Programs</span></h1>
+              <h1 className='why' style={{ fontSize: "35px", marginTop: "30%", marginLeft: "10%" }}>Why enroll in Codegnan's<br /><span style={{color:"#1AB69D"}}>Certification Programs</span></h1>
               <img src="https://codegnan.com/wp-content/uploads/2023/05/heading-separator.png" alt="Heading" style={{ marginLeft: "10%" }} />
             </div>
             <div className='col-12 col-md-6' style={{marginTop:"-5%"}}>
@@ -911,6 +1005,7 @@ const Home = () => {
       <section>
         <Team />
       </section>
+      
       <section className="sec5" style={{ backgroundColor: "#f4f4f4", marginTop: "0%" }}>
         <h1 style={{ textAlign: "center", fontSize: "35px", fontWeight: "bold", paddingTop: "5%" }}>Our training <span className='span4'>Campuses</span></h1>
         <center>

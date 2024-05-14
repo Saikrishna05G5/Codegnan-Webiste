@@ -28,7 +28,7 @@ const Contact = () => {
 </div>
 
 
-<div className='col-12 col-md-6' style={{ paddingLeft: '20px', paddingRight: '20px' }}>
+<div className='col-12 col-md-6' style={{ paddingLeft: '20px', paddingRight: '20px'}}>
   <div className="ab" style={{ width: "100%", maxWidth: "33em",paddingTop:"1%", borderRadius: "8px", boxShadow: "2px 3px 5px grey", paddingBottom: "5%" }}>
     <h4 style={{ color: '#1AB69D', marginTop: '15%', fontSize: "28px", fontWeight: "bold",textAlign: "left", marginLeft: "5%", marginBottom: "4%" }} className='head1'>Have Any Questions? Our Team</h4>
     <h4 style={{ color: '#1AB69D', textAlign: "left", marginLeft: "5%", marginBottom: "4%",fontWeight:"bold",fontSize:"28px" }} className='head2'>Will Get In Touch With You!</h4>
@@ -46,11 +46,11 @@ const Contact = () => {
       </section>
       <center><h3 style={{ color: '#1AB69D', marginTop: '10%',fontSize:"40px",fontWeight:"bold" }}>Our location</h3></center>
 
-      <section className='section1'>
+      <section className='section1' style={{marginLeft:'20px'}}>
         <div className='container'>
           <div className='row'>
             <div className='col-12 col-md-4'>
-              <div className=" ex1" style={{ width: "20rem", margin: "0.5rem",boxShadow:"2px 3px 5px grey",borderRadius:"6px" }}>
+              <div className=" ex1" style={{ width: "20rem", margin: "0.5rem",boxShadow:"2px 3px 5px grey",borderRadius:"6px",marginLeft:"4px"}}>
                 <div className="cb" style={{ padding: "30px" }}>
                   <center><h5 className="ct" style={{color: '#1AB69D'}}>Bengaluru</h5></center>
                   <p className="ct"><p className='custom1' style={{ textAlign: "left", marginLeft: "5%", marginBottom: "4%",fontWeight:"bold",fontSize:"18px" }}><i className="fa-solid fa-phone"></i> Phone Number</p>
@@ -85,7 +85,7 @@ const Contact = () => {
     <p className='custom1' style={{ textAlign: "left", marginLeft: "5%", marginBottom: "4%",fontWeight:"bold",fontSize:"18px" }}><FontAwesomeIcon icon={faEnvelope} /> Quick Contact</p>
     <p className='custom2' style={{ textAlign: "left", marginLeft: "5%", marginBottom: "4%",fontWeight:"bold",fontSize:"18px" ,color:"#cc3366"}}>info@codegnan.com</p></p>
     <p className="ct"><p className='custom1' style={{ textAlign: "left", marginLeft: "5%", marginBottom: "4%",fontWeight:"bold",fontSize:"18px" }}><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;<b>vijayawada</b></p></p>
-    <p style={{color:'grey'}}>40-5-19/16, Prasad Naidu<br/> Complex, P.B.Siddhartha<br/> Busstop, Moghalrajpuram<br/>, Vijayawada, Andhra Pradesh<br/> 520010</p>
+    <center><p style={{color:'grey'}}>40-5-19/16, Prasad Naidu<br/> Complex, P.B.Siddhartha<br/> Busstop, Moghalrajpuram<br/>, Vijayawada, Andhra Pradesh<br/> 520010</p></center>
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30603.22179857803!2d80.647236!3d16.505754!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fb51a430ffad%3A0xe6ed5ede725b304b!2sCodegnan%20IT%20Solutions%3A%20Your%20Best%20Training%20Institute%20for%20Software%20Courses!5e0!3m2!1sen!2sin!4v1715410391239!5m2!1sen!2sin" width="300" height="300" style={{border:"0",marginLeft:"2%",borderRadius:"2px"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>

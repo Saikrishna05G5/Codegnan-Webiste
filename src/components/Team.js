@@ -125,7 +125,7 @@ const Team = () => {
                 <section className='content'>
                     <div className='container'>
                         <div className='row' style={{marginTop:"-5%"}}>
-                            <div className='col-12 col-md-4'>
+                            <div className='col-12 col-md-4 d-flex justify-content-center flex-column' style={{marginRight:"30pxpx"}}>
                                 <ul>
                                     <li className='list-item'><i className="fa-solid fa-check-double list-style"></i>Embark on a Journey with Elite Mentors - IIT Alumni and Top MNC Experts.</li>
                                     <li className='list-item'><i className="fa-solid fa-check-double list-style"></i>Experience Doubt-Free Learning from Product Developers.</li>
