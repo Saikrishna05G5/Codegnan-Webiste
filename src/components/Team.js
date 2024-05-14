@@ -116,7 +116,7 @@ const Team = () => {
             `}</style>
             <section className='team'>
                 <section>
-                    <div className='head-section'>
+                    <div className='head-section' style={{marginLeft:"-9%"}}>
                         <h4 className='bold gray'>OUR TEAM</h4>
                         <p className='bold note'>Our Top Notch Teams<br /> Involved In Helping <span className='red'>You Learn Programming</span>,<br />  Not Just Coding.</p>
                         <img src='https://codegnan.com/wp-content/uploads/2023/05/heading-separator.png' alt='png' />
@@ -125,7 +125,7 @@ const Team = () => {
                 <section className='content'>
                     <div className='container'>
                         <div className='row' style={{marginTop:"-5%"}}>
-                            <div className='col-12 col-md-4 d-flex justify-content-center flex-column' style={{marginRight:"30pxpx"}}>
+                            <div className='col-12 col-md-4 d-flex justify-content-center flex-column' style={{marginLeft:"-5%"}}>
                                 <ul>
                                     <li className='list-item'><i className="fa-solid fa-check-double list-style"></i>Embark on a Journey with Elite Mentors - IIT Alumni and Top MNC Experts.</li>
                                     <li className='list-item'><i className="fa-solid fa-check-double list-style"></i>Experience Doubt-Free Learning from Product Developers.</li>
@@ -133,14 +133,20 @@ const Team = () => {
                                 </ul>
                             </div>
                             <div className='col-12 col-md-4 pics'>
-                                <img className='founder' src='https://codegnan.com/wp-content/uploads/2024/03/sairam.webp' alt='Mr.sairam' />
-                                <img className='founder' src='https://codegnan.com/wp-content/uploads/2024/03/saketh.webp' alt='Mr.saketh' />
-                            </div>
-                            <div className='col-12 col-md-4 founder-name'>
+                              <div className="d-flex flex-column">
+                              <img className='founder' src='https://codegnan.com/wp-content/uploads/2024/03/sairam.webp' alt='Mr.sairam' />
                                 <p className='bold' style={{ textAlign: "center" }}>Mr.SaiRam</p>
-                                <p className='bold' style={{ marginLeft: "65%" }}>Mr.Saketh</p>
+                              </div>
+                        <div className="d-flex flex-column">
+                        <img className='founder' src='https://codegnan.com/wp-content/uploads/2024/03/saketh.webp' alt='Mr.saketh' />
+                                <p className='bold' style={{ textAlign: "center" }}>Mr.Saketh</p>
                             </div>
+                            {/* <div className='col-12 col-md-4 founder-name'>
+                              
+                                <p className='bold' style={{ marginLeft: "65%" }}>Mr.Saketh</p>
+                            </div> */}
                         </div>
+                    </div>
                     </div>
                 </section>
             </section>

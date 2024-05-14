@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import CardSlider from './car/CardSlider.js';
-// import code from './Codegnan.png';
+import code from './Codegnan.png';
 import "./Home.css";
 import Team from "./Team.js";
 const cards = [
@@ -62,6 +62,9 @@ const Home = () => {
         .sec1 {
           background-color: #1f216e;
           margin-top: 10%;
+          width:100vw;
+          
+
         }
         
         .span1 {
@@ -432,7 +435,7 @@ const Home = () => {
         }`
       }
      </style>
-      <section className='sec1'>
+      <section className='sec1' style={{marginTop:"-10%",marginLeft:"-0%"}}>
         <div className='container'>
           <div className='row'>
             <div className='col-12 col-md-6 d-flex justify-content-center flex-column' style={{marginLeft:"-5px"}}>
@@ -447,7 +450,7 @@ const Home = () => {
                 <li className='para2'><i className="fa-solid fa-check-double list-style"></i>Career support with our job acceleration program</li>
                 <li className='para2'><i className="fa-solid fa-check-double list-style"></i>Rated 4.8/5 by more than 2,200 students</li>
               </ul>
-              <button className='btn1'>Explore Program<i class="fa-solid fa-arrow-right"></i></button>
+              <button className='btn1'style={{marginTop:"2%"}}>Explore Program<i class="fa-solid fa-arrow-right"></i></button>
 
             </div>
             <div className='col-12 col-md-6'>
@@ -559,38 +562,39 @@ const Home = () => {
         </div>
 
         
-          <div className="container">
-            <div className="row d-flex flex-row justify-content-center vijju">
-              <div className="col-12 col-md-3">
-                <div className="card ds" style={{ border: '1px solid black', paddingLeft: '10px', paddingTop: '10px', width: '300px' }}>
-                  <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 1 Month</h5>
-                  <p className="card-text c1">Python <span className='span2'>Training</span></p>
-                  <p className="card-text2 c2">Launch your data science or web development career with Python, the versatile programming language.</p><br />
-                  <p><b>Python courses available in:</b> <span className='span3'>Hyderabad, Viajyawada, Bangalore</span></p>
-                </div>
-              </div>
-              <div className="col-12 col-md-3">
-                <div className="card ds" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', width: '300px' }}>
-                  <h5 className="card-title "><i className="fa-solid fa-calendar-days"></i> Duration: 6 Months</h5>
-                  <p className="card-text c1">DataScience <span className='span2'>Training</span></p>
-                  <p className="card-text2 c2">Advance your analytics career by gaining data science skills to extract strategic insights.</p><br />
-                  <p><b>Data science courses available in:</b> <span className='span3'>Hyderabad, Viajyawada, Bangalore</span></p>
-                </div>
-              </div>
-              <div className="col-12 col-md-3">
-                <div className="card py" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', width: '300px' }}>
-                  <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 50 days</h5>
-                  <p className="card-text c1">Full-stack Python Course</p>
-                  <p className="card-text2 c2">Become a full-stack Python developer and kickstart your web and app development career.</p><br />
-                  <p><b>Full-stack Python courses available in:</b> <span className='span3'>Hyderabad, Viajyawada, Bangalore</span></p>
-                </div>
-              </div>
-            </div>
+          <div className="container d-flex justify-content-center flex-column" style={{marginTop:"2%"}}>
+          <div className="row d-flex justify-content-center vijju">
+    <div className="col-12 col-md-3 ">
+        <div className="card ds" style={{ border: '1px solid black', paddingLeft: '10px', paddingTop: '10px', maxWidth: '300px' }}>
+            <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 1 Month</h5>
+            <p className="card-text c1">Python <span className='span2'>Training</span></p>
+            <p className="card-text2 c2">Launch your data science or web development career with Python, the versatile programming language.</p><br />
+            <p><b>Python courses available in:</b> <span className='span3'>Hyderabad, Vijayawada, Bangalore</span></p>
+        </div>
+    </div>
+    <div className="col-12 col-md-3 ">
+        <div className="card ds" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', maxWidth: '300px' }}>
+            <h5 className="card-title "><i className="fa-solid fa-calendar-days"></i> Duration: 6 Months</h5>
+            <p className="card-text c1">DataScience <span className='span2'>Training</span></p>
+            <p className="card-text2 c2">Advance your analytics career by gaining data science skills to extract strategic insights.</p><br />
+            <p><b>Data science courses available in:</b> <span className='span3'>Hyderabad, Vijayawada, Bangalore</span></p>
+        </div>
+    </div>
+    <div className="col-12 col-md-3 ">
+        <div className="card py" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', maxWidth: '300px' }}>
+            <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 50 days</h5>
+            <p className="card-text c1">Full-stack Python Course</p>
+            <p className="card-text2 c2">Become a full-stack Python developer and kickstart your web and app development career.</p><br />
+            <p><b>Full-stack Python courses available in:</b> <span className='span3'>Hyderabad, Vijayawada, Bangalore</span></p>
+        </div>
+    </div>
+</div>
+
           
         
             <div className="row d-flex flex-row justify-content-center vijju">
               <div className="col-12 col-md-3">
-                <div className="card ja" style={{ border: '1px solid black', paddingLeft: '10px', paddingTop: '10px', width: '300px' }}>
+                <div className="card ja" style={{ border: '1px solid black', paddingLeft: '10px', paddingTop: '10px', maxWidth: '300px' }}>
                   <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 1 Month</h5>
                   <p className="card-text c1">Java <span className='span2'>Training</span></p>
                   <p className="card-text2 c2">Strengthen your backend development career by mastering object-oriented Java.</p><br />
@@ -598,7 +602,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-12 col-md-3">
-                <div className="card ml" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', width: '300px' }}>
+                <div className="card ml" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', maxWidth: '300px' }}>
                   <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 6 Months</h5>
                   <p className="card-text c1">Machine Learning <span className='span2'>Training</span></p>
                   <p className="card-text2 c2">Advance your career in AI by mastering machine learning models and algorithms.</p><br />
@@ -606,7 +610,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-12 col-md-3">
-                <div className="card fsj" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', width: '300px' }}>
+                <div className="card fsj" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', maxWidth: '300px' }}>
                   <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 50 days</h5>
                   <p className="card-text c1">Full-stack Java <span className='span2'>Course</span></p>
                   <p className="card-text2 c2">Launch your career as a full-stack developer by gaining in-demand Java skills spanning front and backend.</p><br />
@@ -618,7 +622,7 @@ const Home = () => {
       
             <div className="row d-flex flex-row justify-content-center vijju">
               <div className="col-12 col-md-3">
-                <div className="card rj" style={{ border: '1px solid black', paddingLeft: '10px', paddingTop: '10px', width: '300px' }}>
+                <div className="card rj" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', maxWidth: '300px' }}>
                   <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 1 Month</h5>
                   <p className="card-text c1">React JS <span className='span2'>Training</span></p>
                   <p className="card-text2 c2">Boost your front-end career by building interactive web apps with React.</p><br />
@@ -626,7 +630,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-12 col-md-3">
-                <div className="card dsa" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', width: '300px' }}>
+                <div className="card dsa" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', maxWidth: '300px' }}>
                   <h5 className="card-title"><i className="fa-solid fa-calendar-days "></i> Duration: 6 Months</h5>
                   <p className="card-text c1">Data Structures & Algorithm <br /><span className='span2'>Training</span></p>
                   <p className="card-text2 c2">Strengthen your foundations to pass interviews and excel in software roles.</p><br />
@@ -634,25 +638,22 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-12 col-md-3">
-                <div className="card clang" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', width: '300px' }}>
+                <div className="card clang" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', maxWidth: '300px' }}>
                   <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 50 days</h5>
                   <p className="card-text c1">C Programming <span className='span2'>Course</span></p>
                   <p className="card-text2 c2">Advance your systems and hardware programming career by mastering C language.</p><br />
                   <p className='cl1'>C language course in Vijayawada</p>
                 </div>
               </div>
-              <div className="col-12">
-                <div className="card sft" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', width: '1200px', height: "200px" }}>
-                  <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 100 days</h5>
-                  <p className="card-text c1">Software Testing <span className='span2'>Training</span></p>
-                  <p className="card-text2 c2">Learn comprehensive software testing skills through a thorough training program covering manual testing, white-box and black-box testing, Selenium,<br /> and working on live projects to gain practical experience.
+              <div className="col-sm-6 col-md-12">
+    <div className="card sft" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', maxWidth: '100%' }}>
+        <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 100 days</h5>
+        <p className="card-text c1">Software Testing <span className='span2'>Training</span></p>
+        <p className="card-text2 c2">Learn comprehensive software testing skills through a thorough training program covering manual testing, white-box and black-box testing, Selenium,<br /> and working on live projects to gain practical experience.</p><br />
+        <p className='cl2'><b>Software testing classes available in:</b> <span className='span3'>Vijayawada, Bangalore</span>, and <span className='span3'>Hyderabad</span></p>
+    </div>
+</div>
 
-                  </p><br />
-                  <p className='cl2'><b>Software testing classes available in:</b> <span className='span3'>Vijayawada, Bangalore</span>, and <span className='span3'>Hyderabad</span>
-
-                  </p>
-                </div>
-              </div>
 
             </div>
           </div>
@@ -664,10 +665,10 @@ const Home = () => {
         <center>
           <img src="https://codegnan.com/wp-content/uploads/2023/05/heading-separator.png" alt="Heading" />
         </center>
-        <div className='container'>
+        <div className='container' style={{marginTop:"2%"}}>
           <div className='row'>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/rcs-logo.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -676,7 +677,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/google-logo.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -685,7 +686,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/amazon-logo.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -694,7 +695,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/microsoft-logo.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -703,7 +704,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/iit-bombay-logo.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -712,7 +713,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/stanford-university-logo.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -725,7 +726,7 @@ const Home = () => {
           </div>
           <div className='row'>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/Nielseni-iq-logo-1.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -734,7 +735,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/01/pwc-logo-1.png' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -743,7 +744,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/01/pwc-logo-1.png' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -752,7 +753,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/mphasis-logo-1.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -761,7 +762,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/mphasis-logo-1.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -770,7 +771,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/truminds-logo-1.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -783,7 +784,7 @@ const Home = () => {
           </div>
           <div className='row'>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/Accenture.svg-1-1536x405-1.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -792,7 +793,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/adabella-logo-1.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -801,7 +802,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/temenos-logo-1.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -810,7 +811,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/tech-mahindra-1.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -819,7 +820,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/ezetap-logo-1.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -828,7 +829,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/hired-logos-3.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -841,7 +842,7 @@ const Home = () => {
           </div>
           <div className='row'>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%", height: "70%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%", height: "70%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/hired-logos-9.webp' style={{ marginLeft: "10%", width: "100%", height: "50%", marginTop: "-2%" }} className='img1' />
 
@@ -850,7 +851,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/04/hired-logos-5.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -859,7 +860,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/voya-india-logo-1.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -868,7 +869,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/teksan-logo-1.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -877,7 +878,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/bosch-logo.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -886,7 +887,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-2'>
-              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "25%" }}>
+              <div class="card" style={{ width: "80%", border: "2px solid black", marginLeft: "10%" }}>
                 <div class="card-body">
                   <img src='https://codegnan.com/wp-content/uploads/2024/03/bankof-america-1.webp' style={{ marginLeft: "10%", width: "100%" }} className='img1' />
 
@@ -901,8 +902,8 @@ const Home = () => {
 
 
       </section>
-      <section className='sec4'>
-        <div className='container' style={{marginTop:"-2%"}}>
+      <section className='sec4 d-flex flex-row justify-content-center'>
+        <div className='container' style={{marginTop:"-2%",marginLeft:"10%"}}>
           <div className='row'>
             <div className='col-12 col-md-6' style={{marginTop:"-5%"}}>
               <h1 className='why' style={{ fontSize: "35px", marginTop: "30%", marginLeft: "10%" }}>Why enroll in Codegnan's<br /><span style={{color:"#1AB69D"}}>Certification Programs</span></h1>
@@ -1050,11 +1051,11 @@ const Home = () => {
 
 
       </section>
-      <section className='sec6'>
+      {/* <section className='sec6'>
         <div className='container'>
           <div className='row'>
             <div className='col-12'>
-              <div class="card" style={{ backgroundColor: "#104c44", height: "300px", marginTop: "5%" }}>
+              <div class="card" style={{ backgroundColor: "#104c44", height: "300px", marginTop: "5%", paddingBottom:"3%" }}>
                 <div class="card-body">
                   <div className="row">
                     <div className="col-12">
@@ -1073,32 +1074,80 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className='sec4'>
+      </section> */}
+      <section className='sec6'>
+  <div className='container'>
+    <div className='row justify-content-center'>
+      <div className='col-12 col-md-8'>
+        <div className="card" style={{ backgroundColor: "#104c44", marginTop: "5%", paddingBottom: "3%" }}>
+          <div className="card-body">
+            <div className="row">
+              <div className="col-12">
+                <h1 style={{ color: "white", fontSize: "35px", fontWeight: "bold", textAlign: "center" }}>Still have questions regarding questions ?</h1>
+              </div>
+              <div className="col-12">
+                <p style={{ marginTop: "3%", fontSize: "22px", textAlign: "center" }} className='para7'>Talk to our team and get support in identifying the right tech career course for you. Our team will answer your questions regarding courses, fees, batch details, and all.</p>
+              </div>
+              <div className='col-12 d-flex justify-content-center'>
+                <button className='btn2' style={{ width: "auto", padding: "1%" }}>📞 Call Us</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className='sec4'>
         <div className='container'>
-          <div className='row'>
-            <div className='col-12 col-md-6'>
-              <p className='pfour'>TESTMONIALS</p>
-              <h2 className='st'>What Our Students<br />
+        <center>
+        <div className='row'>
+            <div className='col-12 col-md-6 d-flex justify-center flex-column'>
+              <p className='pfour text-center'>TESTMONIALS</p>
+              <h2 className='st text-center'>What Our Students<br /> 
                 Have To Say</h2>
-              <img src="https://codegnan.com/wp-content/uploads/2023/05/heading-separator.png" className='headimg' />
-              <p className='pfive'>Witnessing our students light up with a radiant smile<br /> after acquiring newfound knowledge brings us<br /> immense joy. Each of these responses fills out hearts<br />  with gratitude and fuels our passion and purpose.<br />
+            <center>
+            <img src="https://codegnan.com/wp-content/uploads/2023/05/heading-separator.png" className='headimg' style={{width:"30%",paddingLeft:"25px"}} />
+            </center>
+              <p className='pfive text-center'style={{marginRight:"-40px",fontSize:"20px"}}>Witnessing our students light up with a radiant smile after acquiring newfound knowledge brings us immense joy. Each of these responses fills out hearts  with gratitude and fuels our passion and purpose.
 
                 Testimonial
                 Flexible Timings, friendly </p>
 
             </div>
-            <div className='col-12 col-md-6'><img src="https://res.cloudinary.com/du3lrtrux/image/upload/v1715431353/Codegnan_eu6mes.png" style={{ width: "100%" }} /></div>
-          </div>
-          <div className="row">
-            <div className='col-12 text-center'>
-              <h5 >Discover the Codgnan Experience: Hear from Students.</h5>
-            </div>
-            <div className="col-12 text-center">
-              <iframe width="630" height="365" src="https://www.youtube.com/embed/ox9FspCBF_k?si=b-PMn5qA74HuLul6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style={{ border: "none", borderRadius: "0px 60px", marginLeft: "-2%" }}></iframe>
+            <div className='col-12 col-md-6' >
+          
+              <img src={code} style={{ width: "125%",display:"flex",justifyContent:"center"}} />
+           
             </div>
           </div>
-          <div class="row">
+        </center>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <h5 style={{ textAlign: 'center' }}>Discover the Codgnan Experience: Hear from Students.</h5>
+                <div style={{ position: 'relative', overflow: 'hidden', width: '100%', paddingTop: '56.25%', maxWidth: '630px', margin: '0 auto' }}>
+                    <iframe
+                        src="https://www.youtube.com/embed/ox9FspCBF_k?si=b-PMn5qA74HuLul6"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '40%', border: 'none', borderRadius: '0px 60px' }} className="ones"
+                    ></iframe>
+                </div>
+            </div>
+            <style>{`
+                @media (max-width: 768px) {
+                    // div[style*="padding-top:56.25%"] {
+                    //     height: auto !important;
+                    // }
+                   .ones{
+                    height:100% !important
+                   }
+                }
+            `}</style>
+          </div>
+          <div class="row" style={{marginTop:"-20%"}}>
 
             <h6 className='head4'>CODEGNAN LEARNERS SUCCESS</h6>
             <p class="pt-5 pone"><span className='vij'>1250+ Companies Have Hired</span> Codegnan Learners</p>
@@ -1107,7 +1156,6 @@ const Home = () => {
               <CardSlider cards={cards} />
             </div>
           </div>
-        </div>
       </section>
       <section className='foot'>
         <div className='container'>

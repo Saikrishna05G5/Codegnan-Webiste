@@ -330,18 +330,21 @@ const Placement= () => {
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen
-                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', borderRadius: '0px 60px' }}
+                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '40%', border: 'none', borderRadius: '0px 60px' }} className="ones"
                     ></iframe>
                 </div>
             </div>
             <style>{`
                 @media (max-width: 768px) {
-                    div[style*="padding-top:56.25%"] {
-                        height: auto !important;
-                    }
+                    // div[style*="padding-top:56.25%"] {
+                    //     height: auto !important;
+                    // }
+                   .ones{
+                    height:100% !important
+                   }
                 }
             `}</style>
-          <div class="row">
+          <div class="row" style={{marginTop:"-20%"}}>
 
             <h6 className='head4'>CODEGNAN LEARNERS SUCCESS</h6>
             <p class="pt-5 pone"><span className='vij'>1250+ Companies Have Hired</span> Codegnan Learners</p>
