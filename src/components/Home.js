@@ -554,112 +554,104 @@ const Home = () => {
         </div>
       </section>
       <section className="grid" style={{ marginTop: "2%" }}>
-        <div className="grid2">
-          <h2 align="center" style={{ paddingTop: "4%" }}>
-            <b><i className="fa-solid fa-star "></i> Our Certification <span className='span4'>Programs</span></b><br />
-            <img src="https://codegnan.com/wp-content/uploads/2023/05/heading-separator.png" alt="Heading" />
-          </h2>
+  <div className="grid2">
+    <h2 align="center" style={{ paddingTop: "4%" }}>
+      <b><i className="fa-solid fa-star"></i> Our Certification <span className='span4'>Programs</span></b><br />
+      <img src="https://codegnan.com/wp-content/uploads/2023/05/heading-separator.png" alt="Heading" />
+    </h2>
+  </div>
+  <div className="container" style={{ marginTop: "2%" }}>
+    <div className="row d-flex justify-content-center">
+      <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div className="card ds" style={{ border: '1px solid black', padding: '10px', marginLeft: '10px' }}>
+          <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 1 Month</h5>
+          <p className="card-text c1">Python <span className='span2'>Training</span></p>
+          <p className="card-text2 c2">Launch your data science or web development career with Python, the versatile programming language.</p><br />
+          <p><b>Python courses available in:</b> <span className='span3'>Hyderabad, Vijayawada, Bangalore</span></p>
         </div>
-
-        
-          <div className="container d-flex justify-content-center flex-column" style={{marginTop:"2%"}}>
-          <div className="row d-flex justify-content-center vijju">
-    <div className="col-12 col-md-3 ">
-        <div className="card ds" style={{ border: '1px solid black', paddingLeft: '10px', paddingTop: '10px', maxWidth: '300px' }}>
-            <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 1 Month</h5>
-            <p className="card-text c1">Python <span className='span2'>Training</span></p>
-            <p className="card-text2 c2">Launch your data science or web development career with Python, the versatile programming language.</p><br />
-            <p><b>Python courses available in:</b> <span className='span3'>Hyderabad, Vijayawada, Bangalore</span></p>
+      </div>
+      <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div className="card ds" style={{ border: '1px solid black', padding: '10px', marginLeft: '10px' }}>
+          <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 6 Months</h5>
+          <p className="card-text c1">DataScience <span className='span2'>Training</span></p>
+          <p className="card-text2 c2">Advance your analytics career by gaining data science skills to extract strategic insights.</p><br />
+          <p><b>Data science courses available in:</b> <span className='span3'>Hyderabad, Vijayawada, Bangalore</span></p>
         </div>
-    </div>
-    <div className="col-12 col-md-3 ">
-        <div className="card ds" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', maxWidth: '300px' }}>
-            <h5 className="card-title "><i className="fa-solid fa-calendar-days"></i> Duration: 6 Months</h5>
-            <p className="card-text c1">DataScience <span className='span2'>Training</span></p>
-            <p className="card-text2 c2">Advance your analytics career by gaining data science skills to extract strategic insights.</p><br />
-            <p><b>Data science courses available in:</b> <span className='span3'>Hyderabad, Vijayawada, Bangalore</span></p>
+      </div>
+      <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div className="card py" style={{ border: '1px solid black', padding: '10px', marginLeft: '10px' }}>
+          <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 50 days</h5>
+          <p className="card-text c1">Full-stack Python Course</p>
+          <p className="card-text2 c2">Become a full-stack Python developer and kickstart your web and app development career.</p><br />
+          <p><b>Full-stack Python courses available in:</b> <span className='span3'>Hyderabad, Vijayawada, Bangalore</span></p>
         </div>
+      </div>
     </div>
-    <div className="col-12 col-md-3 ">
-        <div className="card py" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', maxWidth: '300px' }}>
-            <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 50 days</h5>
-            <p className="card-text c1">Full-stack Python Course</p>
-            <p className="card-text2 c2">Become a full-stack Python developer and kickstart your web and app development career.</p><br />
-            <p><b>Full-stack Python courses available in:</b> <span className='span3'>Hyderabad, Vijayawada, Bangalore</span></p>
+
+    <div className="row d-flex justify-content-center">
+      <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div className="card ja" style={{ border: '1px solid black', padding: '10px', marginLeft: '10px' }}>
+          <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 1 Month</h5>
+          <p className="card-text c1">Java <span className='span2'>Training</span></p>
+          <p className="card-text2 c2">Strengthen your backend development career by mastering object-oriented Java.</p><br />
+          <p><b>Java training classes available in:</b> <span className='span3'>Hyderabad, Vijayawada</span></p>
         </div>
+      </div>
+      <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div className="card ml" style={{ border: '1px solid black', padding: '10px', marginLeft: '10px' }}>
+          <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 6 Months</h5>
+          <p className="card-text c1">Machine Learning <span className='span2'>Training</span></p>
+          <p className="card-text2 c2">Advance your career in AI by mastering machine learning models and algorithms.</p><br />
+          <p><b>Machine learning classes available in:</b> <span className='span3'>Hyderabad, Bangalore</span></p>
+        </div>
+      </div>
+      <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div className="card fsj" style={{ border: '1px solid black', padding: '10px', marginLeft: '10px' }}>
+          <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 50 days</h5>
+          <p className="card-text c1">Full-stack Java <span className='span2'>Course</span></p>
+          <p className="card-text2 c2">Launch your career as a full-stack developer by gaining in-demand Java skills spanning front and backend.</p><br />
+          <p><b>Full-stack Java courses available in:</b> <span className='span3'>Vijayawada, Bangalore</span></p>
+        </div>
+      </div>
     </div>
-</div>
 
-          
-        
-            <div className="row d-flex flex-row justify-content-center vijju">
-              <div className="col-12 col-md-3">
-                <div className="card ja" style={{ border: '1px solid black', paddingLeft: '10px', paddingTop: '10px', maxWidth: '300px' }}>
-                  <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 1 Month</h5>
-                  <p className="card-text c1">Java <span className='span2'>Training</span></p>
-                  <p className="card-text2 c2">Strengthen your backend development career by mastering object-oriented Java.</p><br />
-                  <p><b>Java training classes available in:</b> <span className='span3'>Hyderabad, Viajyawada</span></p>
-                </div>
-              </div>
-              <div className="col-12 col-md-3">
-                <div className="card ml" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', maxWidth: '300px' }}>
-                  <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 6 Months</h5>
-                  <p className="card-text c1">Machine Learning <span className='span2'>Training</span></p>
-                  <p className="card-text2 c2">Advance your career in AI by mastering machine learning models and algorithms.</p><br />
-                  <p><b>Machine learning classes available in:</b> <span className='span3'>Hyderabad, Bangalore</span></p>
-                </div>
-              </div>
-              <div className="col-12 col-md-3">
-                <div className="card fsj" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', maxWidth: '300px' }}>
-                  <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 50 days</h5>
-                  <p className="card-text c1">Full-stack Java <span className='span2'>Course</span></p>
-                  <p className="card-text2 c2">Launch your career as a full-stack developer by gaining in-demand Java skills spanning front and backend.</p><br />
-                  <p><b>Full-stack Java courses available in:</b> <span className='span3'>Viajyawada, Bangalore</span></p>
-                </div>
-              </div>
-            </div>
-        
-      
-            <div className="row d-flex flex-row justify-content-center vijju">
-              <div className="col-12 col-md-3">
-                <div className="card rj" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', maxWidth: '300px' }}>
-                  <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 1 Month</h5>
-                  <p className="card-text c1">React JS <span className='span2'>Training</span></p>
-                  <p className="card-text2 c2">Boost your front-end career by building interactive web apps with React.</p><br />
-                  <p className='cl1'>React JS course in Vijayawada</p>
-                </div>
-              </div>
-              <div className="col-12 col-md-3">
-                <div className="card dsa" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', maxWidth: '300px' }}>
-                  <h5 className="card-title"><i className="fa-solid fa-calendar-days "></i> Duration: 6 Months</h5>
-                  <p className="card-text c1">Data Structures & Algorithm <br /><span className='span2'>Training</span></p>
-                  <p className="card-text2 c2">Strengthen your foundations to pass interviews and excel in software roles.</p><br />
-                  <p className='cl1'>Data structure course in Vijayawada</p>
-                </div>
-              </div>
-              <div className="col-12 col-md-3">
-                <div className="card clang" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', maxWidth: '300px' }}>
-                  <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 50 days</h5>
-                  <p className="card-text c1">C Programming <span className='span2'>Course</span></p>
-                  <p className="card-text2 c2">Advance your systems and hardware programming career by mastering C language.</p><br />
-                  <p className='cl1'>C language course in Vijayawada</p>
-                </div>
-              </div>
-              <div className="col-sm-6 col-md-12">
-    <div className="card sft" style={{ border: '1px solid black', paddingLeft: '20px', paddingTop: '10px', maxWidth: '100%' }}>
-        <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 100 days</h5>
-        <p className="card-text c1">Software Testing <span className='span2'>Training</span></p>
-        <p className="card-text2 c2">Learn comprehensive software testing skills through a thorough training program covering manual testing, white-box and black-box testing, Selenium,<br /> and working on live projects to gain practical experience.</p><br />
-        <p className='cl2'><b>Software testing classes available in:</b> <span className='span3'>Vijayawada, Bangalore</span>, and <span className='span3'>Hyderabad</span></p>
+    <div className="row d-flex justify-content-center">
+      <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div className="card rj" style={{ border: '1px solid black', padding: '10px', marginLeft: '10px' }}>
+          <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 1 Month</h5>
+          <p className="card-text c1">React JS <span className='span2'>Training</span></p>
+          <p className="card-text2 c2">Boost your front-end career by building interactive web apps with React.</p><br />
+          <p className='cl1'>React JS course in Vijayawada</p>
+        </div>
+      </div>
+      <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div className="card dsa" style={{ border: '1px solid black', padding: '10px', marginLeft: '10px' }}>
+          <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 6 Months</h5>
+          <p className="card-text c1">Data Structures & Algorithm <br /><span className='span2'>Training</span></p>
+          <p className="card-text2 c2">Strengthen your foundations to pass interviews and excel in software roles.</p><br />
+          <p className='cl1'>Data structure course in Vijayawada</p>
+        </div>
+      </div>
+      <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div className="card clang" style={{ border: '1px solid black', padding: '10px', marginLeft: '10px' }}>
+          <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 50 days</h5>
+          <p className="card-text c1">C Programming <span className='span2'>Course</span></p>
+          <p className="card-text2 c2">Advance your systems and hardware programming career by mastering C language.</p><br />
+          <p className='cl1'>C language course in Vijayawada</p>
+        </div>
+      </div>
+      <div className="col-12">
+        <div className="card sft" style={{ border: '1px solid black', padding: '10px', marginLeft: '10px' }}>
+          <h5 className="card-title"><i className="fa-solid fa-calendar-days"></i> Duration: 100 days</h5>
+          <p className="card-text c1">Software Testing <span className='span2'>Training</span></p>
+          <p className="card-text2 c2">Learn comprehensive software testing skills through a thorough training program covering manual testing, white-box and black-box testing, Selenium,<br /> and working on live projects to gain practical experience.</p><br />
+          <p className='cl2'><b>Software testing classes available in:</b> <span className='span3'>Vijayawada, Bangalore</span>, and <span className='span3'>Hyderabad</span></p>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+</section>
 
-
-            </div>
-          </div>
-        
-    
-      </section>
       <section className='sec3'>
         <center><h1 className='companies'>Companies where<span style={{color:"#1AB69D"}} > Our students got placed</span> </h1></center>
         <center>
