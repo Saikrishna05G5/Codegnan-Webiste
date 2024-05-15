@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
@@ -44,7 +43,7 @@ const App = () => {
         <Navbar bg="white" variant="light" expand="lg" expanded={expanded}>
           <Navbar.Brand as={Link} to="/">
             <img
-              src="./CodegnanDestination.png"
+              src='./CodegnanDestination.png'
               alt="Codegnan Logo"
               style={{ height: '90px', width: '55%', marginRight: '130px', marginLeft: '40px' }}
             />
@@ -103,7 +102,7 @@ const App = () => {
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link as={Link} to="/placements" onClick={handleSelect} style={{ marginLeft: '20px' }}>
-                Placements
+                Campuses
               </Nav.Link>
               <NavDropdown title="About" id="about-nav-dropdown" style={{ marginLeft: '20px' }}>
                 <NavDropdown.Item as={Link} to="/about/team" onClick={handleSelect}>
@@ -119,7 +118,7 @@ const App = () => {
                   Job Accelerator Program
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="Campuses" id="campuses-nav-dropdown" style={{ marginLeft: '20px' }}>
+              <NavDropdown title="Placements" id="campuses-nav-dropdown" style={{ marginLeft: '20px' }}>
                 <NavDropdown.Item as={Link} to="/campuses/bangalore" onClick={handleSelect}>
                   Bangalore
                 </NavDropdown.Item>
@@ -138,27 +137,35 @@ const App = () => {
         </Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/trainings/python" element={<PythonTraining />} />
-          <Route path="/trainings/python-full-stack" element={<PythonFullStack />} />
-          <Route path="/trainings/java" element={<JavaTraining />} />
-          <Route path="/trainings/java-full-stack" element={<JavaFullStackTraining />} />
-          <Route path="/trainings/data-science" element={<DataScienceTraining />} />
-          <Route path="/trainings/machine-learning" element={<MachineLearning />} />
-          <Route path="/trainings/software-testing" element={<SoftwareTesting />} />
-          <Route path="/trainings/react-js" element={<ReactJSTraining />} />
-          <Route path="/trainings/data-structures" element={<DataStructuresTraining />} />
-          <Route path="/trainings/c-programming" element={<CProgramming />} />
-          <Route path="/resources/blog" element={<Blog />} />
-          <Route path="/resources/syllabus" element={<Syllabus />} />
-          <Route path="/resources/project-ideas" element={<ProjectIdeas />} />
-          <Route path="/campuses" element={<Placements />} />
-          <Route path="/about/team" element={<Team />} />
-          <Route path="/about/gallery" element={<Gallery />} />
-          <Route path="/about/internships" element={<Internships />} />
-          <Route path="/about/job-accelerator-program" element={<JobAcceleratorProgram />} />
-          <Route path="/campuses/bangalore" element={<Bangalore />} />
-          <Route path="/campuses/hyderabad" element={<Hyderabad />} />
-          <Route path="/campuses/vijayawada" element={<Vijayawada />} />
+          <Route path="/trainings/*" element={<trainings />}>
+            <Route path="python" element={<PythonTraining />} />
+            <Route path="python-full-stack" element={<PythonFullStack />} />
+            <Route path="java" element={<JavaTraining />} />
+            <Route path="java-full-stack" element={<JavaFullStackTraining />} />
+            <Route path="data-science" element={<DataScienceTraining />} />
+            <Route path="machine-learning" element={<MachineLearning />} />
+            <Route path="software-testing" element={<SoftwareTesting />} />
+            <Route path="react-js" element={<ReactJSTraining />} />
+            <Route path="data-structures" element={<DataStructuresTraining />} />
+            <Route path="c-programming" element={<CProgramming />} />
+          </Route>
+          <Route path="/resources/*" element={<resources />}>
+            <Route path="blog" element={<Blog />} />
+            <Route path="syllabus" element={<Syllabus />} />
+            <Route path="project-ideas" element={<ProjectIdeas />} />
+          </Route>
+          <Route path="/placements" element={<Placements />} />
+          <Route path="/about/*" element={<about />}>
+            <Route path="team" element={<Team />} /> 
+            <Route path="gallery" element={<Gallery />} /> 
+            <Route path="internships" element={<Internships />} />
+            <Route path="job-accelerator-program" element={<JobAcceleratorProgram />} /> 
+          </Route>
+          <Route path="/camp" element={<campuses />}>
+            <Route path="bangalore" element={<Bangalore />} /> 
+            <Route path="hyderabad" element={<Hyderabad />} /> 
+            <Route path="vijayawada" element={<Vijayawada />} />
+          </Route>
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
