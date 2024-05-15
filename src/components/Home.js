@@ -1006,33 +1006,33 @@ const Home = () => {
   </center>
   <div className='container' style={{ marginTop: "1%" }}>
     <div className='row'>
-      <div className='col-md-4'>
-        <div className="card" style={{ width: "25rem" }}>
+      <div className='col-md-4 mb-4'>
+        <div className="card" style={{ width: "100%" }}>
           <div className="card-body" style={{ display: "flex", flexDirection: "column" }}>
-            <h6 className="card-subtitle mb-2 text-muted" style={{ marginLeft: "-40%" }}><i className="fa-solid fa-phone"></i> Call: +91 9888748888</h6><br />
-            <h5 className="card-title" style={{ marginTop: "-4%", marginLeft: "-12%" }}>Vijayawada training<span className='span4'> center</span></h5>
-            <p className="card-text">40-5-19/16, Prasad Naidu Complex<br />, P.B.Siddhartha Busstop, Moghalrajpuram<br />, Vijayawada, Andhra Pradesh, 520010.</p><br />
-            <p style={{ marginLeft: "-28%" }}>Visit Our <span className='span3' style={{ fontWeight: "bold" }}>Vijayawada Campus</span></p>
+            <h6 className="card-subtitle mb-2 text-muted"><i className="fa-solid fa-phone"></i> Call: +91 9888748888</h6>
+            <h5 className="card-title" style={{ marginTop: "1rem" }}>Vijayawada training<span className='span4'> center</span></h5>
+            <p className="card-text">40-5-19/16, Prasad Naidu Complex<br />, P.B.Siddhartha Busstop, Moghalrajpuram<br />, Vijayawada, Andhra Pradesh, 520010.</p>
+            <p>Visit Our <span className='span3' style={{ fontWeight: "bold" }}>Vijayawada Campus</span></p>
           </div>
         </div>
       </div>
-      <div className='col-md-4'>
-        <div className="card" style={{ width: "25rem" }}>
+      <div className='col-md-4 mb-4'>
+        <div className="card" style={{ width: "100%" }}>
           <div className="card-body" style={{ display: "flex", flexDirection: "column" }}>
-            <h6 className="card-subtitle mb-2 text-muted" style={{ marginLeft: "-40%" }}><i className="fa-solid fa-phone"></i> Call: +91 9888748888</h6><br />
-            <h5 className="card-title" style={{ marginTop: "-4%", marginLeft: "-12%" }}>Hyderabad training<span className='span4'> center</span></h5>
-            <p className="card-text">Kothwal Madhava Reddy Plaza, Near JNTUH<br />Metro Station, Nizampet X Roads<br />Hyderabad, 500072</p><br />
-            <p style={{ marginLeft: "-28%" }}>Visit Our <span className='span3' style={{ fontWeight: "bold" }}>Hyderabad Campus</span></p>
+            <h6 className="card-subtitle mb-2 text-muted"><i className="fa-solid fa-phone"></i> Call: +91 9888748888</h6>
+            <h5 className="card-title" style={{ marginTop: "1rem" }}>Hyderabad training<span className='span4'> center</span></h5>
+            <p className="card-text">Kothwal Madhava Reddy Plaza, Near JNTUH<br />Metro Station, Nizampet X Roads<br />Hyderabad, 500072</p>
+            <p>Visit Our <span className='span3' style={{ fontWeight: "bold" }}>Hyderabad Campus</span></p>
           </div>
         </div>
       </div>
-      <div className='col-md-4'>
-        <div className="card" style={{ width: "25rem", height: "92%" }}>
+      <div className='col-md-4 mb-4'>
+        <div className="card" style={{ width: "100%" }}>
           <div className="card-body" style={{ display: "flex", flexDirection: "column" }}>
-            <h6 className="card-subtitle mb-2 text-muted" style={{ marginLeft: "-40%" }}><i className="fa-solid fa-phone"></i> Call: +91 9888748888</h6><br />
-            <h5 className="card-title" style={{ marginTop: "-4%", marginLeft: "-12%" }}>Bengaluru training<span className='span4'> center</span></h5>
-            <p className="card-text">#951, 16th Main, BTM 2nd Stage, Bengaluru,<br />Karnataka, 560076</p><br />
-            <p style={{ marginLeft: "-28%" }}>Visit Our <span className='span3' style={{ fontWeight: "bold" }}>Bengaluru Campus</span></p>
+            <h6 className="card-subtitle mb-2 text-muted"><i className="fa-solid fa-phone"></i> Call: +91 9888748888</h6>
+            <h5 className="card-title" style={{ marginTop: "1rem" }}>Bengaluru training<span className='span4'> center</span></h5>
+            <p className="card-text">#951, 16th Main, BTM 2nd Stage, Bengaluru,<br />Karnataka, 560076</p>
+            <p>Visit Our <span className='span3' style={{ fontWeight: "bold" }}>Bengaluru Campus</span></p>
           </div>
         </div>
       </div>
